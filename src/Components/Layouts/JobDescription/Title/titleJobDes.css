@@ -1,0 +1,87 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%),hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(180, 2%, 8%);
+  --greyColor: hsl(240, 2%, 52%);
+  --lightgreyColor: #D9D9D9;
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+}
+*{
+  font-family: 'spectral';
+}
+.jobRolesDes {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  letter-spacing: 0em;
+  z-index: 100;
+  position: fixed;
+  background: #f8f5f5;
+  height: var(--headerHeight);
+  border-bottom: 2px solid var(--greyColor);
+}
+.roleNameDes{
+  padding: 0.2rem;
+  margin-top: 7.3rem;
+
+}
+
+.roleNameDes h3 a{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 180%;
+  color: #004B9D;
+}
+.roleNameDes img{
+  width: 12px;
+  height: 17px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.roleNameDes a:hover, .jobCategories .active, .roleNameDes .active:focus, .roleNameDes a:hover > a {
+  color: #003C7E;
+  font-weight: 700;
+  text-decoration: underline;
+}
+@media screen and (min-width: 1200px) {
+  .jobRolesDes {
+    padding: 0 2rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .jobRolesDes {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .jobRolesDes{
+    padding: 0 6rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .jobRolesDes{
+    padding: 0 4rem;
+  }
+  .roleNameDes{
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .jobRolesDes{
+    padding: 0 4rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .jobRolesDes{
+    padding: 0 4rem;
+  }
+}

@@ -1,0 +1,129 @@
+.about-us-wrapper {
+  /* background-color: blue; */
+  min-height: 100%;
+  width: 100%;
+}
+
+.about-us-profile-image {
+  object-fit: contain;
+  max-width: 150px;
+  margin-right: 3rem;
+}
+
+.about-us-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.about-us-head-container {
+  display: flex;
+  /* background-color: brown; */
+}
+
+.about-us-head-sub-container {
+  display: flex;
+  /* align-items: center; */
+}
+
+.about-us-head-sub-wrapper {
+  /* background-color: yellow; */
+}
+
+.about-us-head-sub-wrapper > h6 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.about-us-head-sub-container > h4 {
+  font-family: "Spectral";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  color: #000000;
+}
+
+.about-us-head-sub-container > img {
+  object-fit: contain;
+  max-width: 30px;
+}
+
+.about-me-body {
+  background-color: #ffffff;
+  width: 100%;
+  min-height: 412px;
+  border: 1px solid #cccccc;
+  border-radius: 24px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.about-me-body-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.about-me-body-top > h6 {
+  font-family: "Spectral";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.about-me-body-top > img {
+  object-fit: contain;
+  max-width: 33px;
+}
+
+.about-me-body-bottom {
+  width: 100%;
+  min-height: 280px;
+  background: #004b9d;
+  border-radius: 16px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-me-body-bottom-default {
+  width: 100%;
+  min-height: 280px;
+  background: #004b9d;
+  border-radius: 16px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.about-me-body-bottom > section {
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+.about-me-body-bottom > section > h6 {
+  font-family: "Spectral";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.about-me-body-bottom > section > span {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: right;
+}

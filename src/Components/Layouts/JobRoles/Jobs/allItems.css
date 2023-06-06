@@ -1,0 +1,49 @@
+input:focus {
+  outline: none;
+}
+
+.dataResult {
+  margin-top: 1.95rem;
+  right: 2rem;
+  position: absolute;
+  width: 399px;
+  height: 230px;
+  border: 1px solid #004B9D;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background: #f8f5f5;
+  overflow: hidden;
+  overflow-y: auto;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.dataResult:empty{
+  border: none;
+  z-index: 0;
+  background: none;
+}
+
+.dataResult::-webkit-scrollbar {
+  display: visible;
+}
+
+.dataItem p {
+  padding: 2rem;
+  margin-left: -1rem;
+  font-size: small;
+  color: #333333;
+  font-family: 'lato';
+  font-size: 18px;
+  line-height: 0px;
+  position: relative;
+  border-bottom: 1px solid #004B9D;
+}
+
+.dataItem p:hover {
+  background-color: lightgrey;
+}
+
+#clearBtn {
+  cursor: pointer;
+}

@@ -1,0 +1,84 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%),hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(180, 2%, 8%);
+  --greyColor: hsl(240, 2%, 52%);
+  --lightgreyColor: #D9D9D9;
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --fade:#5C5A5A;
+}
+
+h1,h2,h3,h4,h5,h6{
+
+  font-family: 'spectral';
+}
+
+.container-fluid-3{
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+  padding: 0 2rem;
+  background: rgba(249, 249, 249, 0.94);
+  margin-top: 2rem;
+}
+.vmsTrackImpact{ 
+  width: 50%;
+  margin-top: rem;
+  align-items: center;
+  justify-content: flex-start;
+  letter-spacing: 0em;  
+}
+.vmsTrackImpact h3{
+  font-family: 'Spectral';
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #004B9D;
+}
+.vmsTrackImpact p{ 
+  color: #666666;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 180%;
+  text-align: justify;
+  font-family: 'lato';
+  text-align: right;
+  text-align: left;
+}
+.vmsTrackImpact .learn_more{
+  justify-content: flex-start;
+  margin-top: 3rem;
+}
+.vmsTrackImpact .learn_more a{
+  color: #EB6223;
+  font-size: 16px;
+  font-family: 'lato';
+  font-weight: 600;
+}
+.vmsTrackImpact .learn_more .vector{
+  width: 15px;
+  height: 30px;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  text-align: left;
+}
+.vmsImage3{
+  width: 50%;
+  margin-top: rem;
+  align-items: center;
+  justify-content: right;
+}
+.vmsImage3 img{
+  height: 500px;
+  justify-self: end;
+  display: block;
+  background-size: cover;
+}
+

@@ -1,0 +1,126 @@
+.pageCount{
+  visibility: hidden;
+}
+
+.pageCount .showPageCount{
+  visibility: visible;
+  font-size: 50px;
+  line-height: 180%;
+}
+
+.pageCount .hidePageCount{
+  visibility: hidden;
+}
+
+.pageCount strong{
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 180%;
+  text-align: center;
+  color: #333333;
+}
+
+.paginationBttns {
+  margin:  0 auto;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  list-style: none;
+  margin-bottom: 5rem;
+  margin-top: 3rem;
+  padding: 0 2rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.pagination .hide{
+  visibility: hidden;
+}
+.pagination .show{
+  visibility: visible;
+}
+
+.paginationBttns a {
+  font-family: 'lato';
+  font-size: 14px;
+  line-height: 180%;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 20px;
+  width: max-content;
+  height: 59px;
+  background: #FFFFFF;
+  color: #004B9D;
+  border: 2px solid #004B9D;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.paginationBttns a:hover {
+  color: white;
+  background-color: #004B9D;
+}
+
+a:active{
+  color: #FFFFFF;
+}
+
+.paginationActive a {
+  color: white;
+  background-color: #004B9D;
+}
+
+.paginationBttns .nextBttn{
+  
+}
+
+.paginationDisabled a {
+  visibility: hidden;
+}
+
+
+@media screen and (min-width: 1200px) {
+  .nextPage{
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .nextPage{
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .nextPage{
+    padding: 1rem 10rem;
+  }
+}
+
+
+@media screen and (max-width: 870px) {
+  .nextPage{
+    padding: 0.6rem 12.5rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .nextPage{
+    padding: 0.6rem 12.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .nextPage{
+    padding: 0.6rem 10rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .nextPage{
+    padding: 0.6rem 10rem;
+  }
+}

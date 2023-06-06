@@ -1,0 +1,293 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%),hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(180, 2%, 8%);
+  --greyColor: hsl(240, 2%, 52%);
+  --lightgreyColor: #D9D9D9;
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+}
+
+*{
+  font-family: 'spectral';
+}
+
+#jobSec{
+  max-width: 100%;
+  align-items: center;
+  justify-content: space-betwen;
+}
+
+.search_jobListing{
+  margin-top: 50px;
+  padding: 0 2rem;
+}
+
+.col:first-child{
+  flex: 1;
+}
+
+.col:last-child{
+  flex: 0;
+}
+
+.search_jobListing h2{
+  font-size: 32px;
+  font-weight: 600;
+  font-family: 'spectral';
+  line-height: 150%;
+  text-align: center;
+}
+
+#search{
+  width: 50%;
+  display: flex;
+  margin-top: -2rem;
+  justify-content: flex-end;
+}
+
+#search .input{
+  width: 25%;
+  height: 55px;
+  padding: 1rem;
+  font-size: 14px;
+  background: #FFF;
+  border-radius: 8px;
+  position: absolute;
+  color: #1c1616;
+  font-family: 'lato';
+  right: 2rem;
+  border:2px solid #004B9D;
+  justify-content: right;
+}
+
+#search .input_bottom_border_change{
+  width: 25%;
+  height: 55px;
+  padding: 1rem;
+  font-size: 14px;
+  background: #FFF;
+  border-radius: 8px;
+  position: absolute;
+  color: #1c1616;
+  font-family: 'lato';
+  right: 2rem;
+  border:2px solid #004B9D;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+  justify-content: right;
+}
+
+.searchIcons{
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  right: 4rem;
+}
+
+.searchIcons .iconSearch{
+  height: 23px;
+  width: 23px;
+  cursor: pointer;
+  margin-top: 1.2rem;
+  position: absolute;
+  left: 0;
+}
+
+.searchIcons .iconClose{
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  margin-top: 0.9rem;
+  z-index: 100;
+}
+
+.searchInput{
+  width: 50vh;
+  height: 35px;
+  position: absolute;
+  padding: 1rem;
+  font-size: small;
+  background: #FFFF;
+  border-radius: 8px;
+  color: var(--fade);
+  border: 1px solid rgb(93, 91, 91);
+  border:1px solid #32634b;
+  font-size: small;
+  visibility: hidden;
+}
+
+.iconSearch_2{
+  height: 22px;
+  width: 22px;
+  position: absolute;
+  margin-right: 0.2rem;
+  margin-top: 0rem;
+  visibility: hidden;
+}
+
+#jobSec .jobLists {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.jobCategories{
+  width: 100%;
+  align-items: center;
+  justify-content: start;
+}
+
+.jobCategories .toggleJobClose{
+  margin-top: -2rem;
+}
+.jobCategories .toggleJobClose .nav-close-btn {
+  height: 30px;
+  width: 30px;
+  color: var(--PrimaryColor);
+  margin-left: 0rem;
+  cursor: pointer;
+  visibility: hidden;
+}
+.jobCategories .toggleJobTab .nav-open-btn{
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  visibility: hidden;
+  border: 1px solid gray;
+  border-radius: 2px;
+  background: rgb(168, 185, 197);
+}
+
+@media screen and (max-width: 390px) {
+  #search .searchInput{
+    width: 30vh;
+    height: 35px;
+    padding: 1rem;
+    font-size: small;
+    background: #fbf9f9;
+    border-radius: 8px;
+    color: var(--fade);
+    border: 1px solid rgb(93, 91, 91);
+    outline: none !important;
+    border:1px solid #32634b;
+    font-size: small;
+  }
+  #search .searchIcons{
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    margin-right: 0.2rem;
+    margin-top: 0rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .jobLists {
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .jobLists {
+    padding: 0rem 2rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .jobLists{
+    padding: 1rem 7rem;
+  }
+}
+@media screen and (max-width: 870px) {
+  .jobLists{
+    padding: 2rem 7rem;
+  }
+  .jobCategories .toggle{
+    background: var(--whiteColorDeam);
+    position: absolute;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    width: auto;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+    justify-content: start;
+    transform: translateX(-100vh);
+    z-index: 900;
+    box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
+    transition: 1.5s ease-in-out;
+  }
+  .jobCategories ul{
+    display: grid;
+    margin-bottom: 1.5rem;
+  }
+  .jobCategories li{
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 0.5rem 1rem;
+  }
+  .jobCategories .toggleJobClose .iconClose{
+    visibility: visible;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 4em;
+  }
+  .jobCategories .toggleJobTab .iconTab{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    position: absolute;
+    left: 5rem;
+    margin-top: -1rem;
+    visibility: visible;
+    border: 1px solid gray;
+    border-radius: 2px;
+    background: rgb(5, 51, 84);
+  }
+  
+  .jobCategories .open_nav {
+    transform: none;
+    transform: translateX(vh);
+    transition: 1.5s ease-in-out;
+  }
+  .jobCategories .close_nav{
+    transform: none;
+    transform: translateX(-100vh);
+    transition: 1.5s ease-in-out
+  }
+  .search .input, .button{
+    visibility: hidden;
+  }
+  .search .searchInput{
+    visibility: visible;
+  }
+  .search .iconSearch_2{
+    visibility: visible;
+  }
+}
+@media screen and (max-width: 760px) {
+  .jobLists{
+    padding: 1rem 5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header{
+    padding: 0.6rem 5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header{
+    padding: 0.6rem 5rem;
+  }
+  
+}

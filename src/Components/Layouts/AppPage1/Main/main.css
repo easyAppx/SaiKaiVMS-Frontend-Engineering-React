@@ -1,0 +1,564 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%),hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(180, 2%, 8%);
+  --greyColor: hsl(240, 2%, 52%);
+  --lightgreyColor: #D9D9D9;
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --fade:#5C5A5A;
+
+}
+
+*{
+  font-family: 'spectral';
+}
+
+/* error msg */
+.mainInfo .appPage-content .errorMsg{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.45rem;
+  text-align: left;
+  width: 100%;
+  font-weight: 600;
+}
+.mainInfo .appPage-content .errorMsg .errorMsgLine{
+  width: 500px;
+  color: red;
+  font-size: 16px;
+  text-align: left;
+  padding: 0 rem;
+  margin-top: -1.8rem;
+}
+.mainInfo .appPage-content .errorMsg .errorMsgLine2{
+  width: 500px;
+  color: red;
+  font-size: 16px;
+  text-align: left;
+  padding: 0 0;
+  position: relative;
+  margin-top: -1.8rem;
+  left: 1rem;
+}
+.mainInfo .appPage-content .errorMsg .errorCvMsgLine{
+  width: 500px;
+  color: red;
+  font-size: 16px;
+  text-align: left;
+  padding: 0 rem;
+  margin-top: -4.8rem;
+}
+
+/*cardDiv */
+ .cardDiv{
+  width: 100%;
+  padding: 2rem 0rem;  
+  text-align: left;
+  justify-content: space-between;
+}
+
+.cardDiv .formWrapper{
+  width: 49%;
+  padding: 0rem 0rem;
+ }
+ 
+.cardDiv .formWrapper label{
+  color: var(--blackColor);
+  font-family: 'Spectral';
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 200%;
+}
+
+.cardDiv .formWrapper #name{
+  width: 100%;
+  height: 60px;
+  border-radius: 8px;
+  padding-left: 5px;
+  border: 2px solid #333333;
+  color: #333333;
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+}
+
+.form .formWrapper #name:focus{
+  border: 2px solid #336FB1;
+}
+
+.form .formWrapper #email:focus{
+  border: 2px solid #336FB1;
+}
+
+.cardDiv .formWrapper #countryDropdown{
+  width: 100%;
+  height: 60px;
+  border-radius: 8px;
+  border: 2px solid #336FB1;
+  color: #333333;
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+}
+
+.cardDiv .formWrapper #countryDropdown .countyDp{
+  border: none;
+  padding: 1.5rem 1.3rem;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.cardDiv .formWrapper .cityDrpdn{
+  width: 100%;
+  height: 60px;
+  border-radius: 8px;
+  border: 2px solid #336FB1;
+  color: #333333;
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+}
+
+.cardDiv .formWrapper .cityDrpdn .cityInput{
+  border: none;
+  padding: 1.5rem 1.3rem;
+  background: none;
+}
+
+/* 
+.form .formWrapper #citydrop:focus{
+  border: 2px solid #336FB1;
+} */
+
+/* cardDivFull */
+.cardDivFull{
+  width: 100%;
+  padding: 2rem 0rem;  
+  text-align: left;
+}
+
+.cardDivFull .formWrapper{
+  width: 100%;
+  padding: 0rem 0rem;
+ }
+
+.cardDivFull .formWrapper label{
+  color: var(--blackColor);
+  font-family: 'Spectral';
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 200%;
+}
+
+.cardDivFull .formWrapper #email{
+  width: 100%;
+  height: 60px;
+  border-radius: 8px;
+  border: 2px solid #333333;
+  padding-left: 5px;
+  color: #333333;
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+}
+
+.react-tel-input .flag-dropdown{
+  border: none !important;
+  background: none !important;
+}
+.react-tel-input .flag-dropdown:hover{
+  background-color: none !important;
+}
+
+/* .react-tel-input{
+  height: 60px !important;
+  border: 2px solid #336FB1;
+	border-radius: 8px;
+  padding-left: 1rem !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+} */
+
+.react-tel-input .flag{
+  transform: scale(2) !important;
+}
+
+/* .cardDivFull .formWrapper .phoneWrapper .containerClass{
+  width: 100%;
+  height: 60px !important;
+  border: 2px solid #336FB1;
+	border-radius: 8px;
+  padding-left: 1rem !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important; 
+} */
+
+.cardDivFull .formWrapper .phoneWrapper .btnClass{
+  height: 60px !important;
+  width: 33vh !important;
+  border-radius: 8px;
+  border: 2px solid #336FB1 !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  background: none !important;
+  padding-left: 1rem !important; 
+}
+
+.cardDivFull .formWrapper .phoneWrapper .drpPhoneInput{
+  width: 32.5vh;
+  margin-left: -1rem;
+  padding: 11px;
+  gap: 10px !important;
+}
+
+.cardDivFull .formWrapper .phoneWrapper .phoneInput{
+  width: 72%;
+  height: 60px !important;
+  border: 2px solid #336FB1;
+	border-radius: 8px;
+  padding-left: 1rem !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  color: #333333;
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+  margin-left: 18rem !important;
+  /* margin-top: 0.25rem !important; */
+}
+
+/* .cardDivFull .formWrapper .phoneWrapper .numberInput{
+  width: 100%;
+  height: 60px;
+  border-radius: 8px;
+  border: 2px solid #333333;
+  color: #333333;
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+  border-left: none;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+} */
+
+.cardDivFull .formWrapper #linkedIn{
+  width: 100%;
+  height: 60px;
+  border-radius: 8px;
+  border: 2px solid #333333;
+  padding-left: 5px;
+  color: #333333;
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+}
+
+.form .formWrapper #linkedIn:focus{
+  border: 2px solid #336FB1;
+}
+
+.cardDivFull .formWrapper #dropdownNew{
+  width: 100%;
+  height: 60px;
+}
+
+.cardDivFull .formWrapper #dropdownNew .dropdown-btn{
+  width: 100%;
+  height: 60px;
+  border-radius: 8px;
+  border: 2px solid #333333;
+  color: #333333;
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+  padding: 15px 15px;
+  background: #FFF;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form .formWrapper #howyouheard:focus{
+  border: 2px solid #336FB1;
+}
+
+.form .formWrapper #dropdownNew .dropdown-btn:focus{
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+  cursor: auto;
+  border: 2px solid #336FB1;
+}
+
+.cardDivFull .formWrapper #dropdownNew .dropdown-content{
+  width: 100%;
+  height: fit-content;
+  border-radius: 8px;
+  border: 2px solid #333333;
+  position: relative;
+  /* border-top-right-radius: 0%;
+  border-top-left-radius: 0%; */
+  color: #333333;
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+  background: #FFF;
+  margin-top: 0.5rem;
+}
+
+.cardDivFull .formWrapper #dropdownNew .dropdown-content .dropdown-item{
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 15px;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.cardDivFull .formWrapper #dropdownNew .dropdown-content .dropdown-item:hover{
+  background: #D9D9D9;
+}
+
+
+/*file uplaod*/
+
+.cardDivFull .formWrapper .uploadFile{
+  width: 100%;
+  height: 420px;
+  align-items: center;
+  justify-content: center;
+  background: #F5F5F5;
+  border-radius: 8px;
+  border: 2px solid #CCCCCC;
+  box-shadow: 0px 0px 30px 2px rgba(0, 0, 0, 0.2) !important;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: rem;
+}
+
+.cardDivFull .formWrapper .uploadFile .imgSec{
+  justify-content: center;
+  align-items: center;
+  margin-left: -2.1rem;
+}
+.cardDivFull .formWrapper .uploadFile .ellipse {
+  width: 120px;
+  height: 120px;
+  margin-top: 2rem;
+}
+
+.cardDivFull .formWrapper .uploadFile .inst{
+  top: 1rem;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+}
+.cardDivFull .formWrapper .uploadFile .inst h3{
+  font-size: 24px;
+  line-height: 150%;
+  font-family: 'spectral';
+  font-weight: 600;
+  color: #000;
+}
+.cardDivFull .formWrapper .uploadFile .inst h6{
+  font-size: 16px;
+  line-height: 0;
+  font-family: 'lato';
+  font-weight: 600;
+  color: #666666;
+}
+
+/* ----or-----*/
+.linesOr{
+  margin-top: 20px;
+  width: 80vh;
+  height: 45px;
+  position: relative;
+}
+.linesOr::after, .linesOr::before{
+  content: '';
+  position: absolute;
+  margin: auto;
+  height: 2px;
+  background: var(--greyColor);
+  width: 48%;
+  top: 45%;
+}
+.linesOr::after{
+  left: 0;
+}
+.linesOr::before{
+  right: 0;
+}
+.circleOr{
+  width: 40px;
+  height: 40px;
+  border: 2px solid #D9D9D9;
+  padding-top: 0.5rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.uploadFile .upload .browseFilesBtn{
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 1rem;
+  width: 250px;
+  height: 50px;
+  background: #5C5A5A;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.uploadFile .upload .browseFilesBtn a{
+  color: var(--whiteColor);
+  font-size: 20px;
+  font-family: 'Spectral', 'roboto'; 
+}
+
+/* ----or-----*/
+.cardDivFull .formWrapper .uploadFile .linesOr{
+  margin: 0 auto;
+  width: 80vh;
+  height: 45px;
+  margin-top: 4rem;
+  position: relative;
+}
+.cardDivFull .formWrapper .uploadFile .linesOr::after, .cardDivFull .formWrapper .uploadFile .linesOr::before{
+  content: '';
+  position: absolute;
+  margin: auto;
+  height: 2px;
+  background: rgba(60, 60, 67, 0.36);;
+  width: 47%;
+  top: 33%;
+}
+.cardDivFull .formWrapper .uploadFile .linesOr::after{
+  left: 1;
+}
+.cardDivFull .formWrapper .uploadFile .linesOr::before{
+  right: 0;
+}
+.cardDivFull .formWrapper .uploadFile .linesOr .Or{
+  width: 40px;
+  height: 40px;
+  padding-top: 0.5rem;
+  color: #009D49;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+}
+
+.btnOrange{
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.uploads{
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  background-color: var(--whiteColorDeam);
+  border: 1px solid grey;
+}
+.uploads .file{
+  padding: 2rem;
+}
+.uploads .actions{
+  padding: 5rem;
+}
+.uploads .actions .btn_file{
+  padding: 1rem;
+}
+
+.list_main_container .social_items{
+  justify-content: center;
+  margin: 0 auto;
+  background: #D9D9D9;
+  width: 95%;
+  border-radius: 8px;
+}
+.list_main_container h3{
+  margin-bottom: 0.5rem;
+  margin-left: 2rem;
+}
+.social_items .social_list{
+  justify-content: space-between;
+  height: 40px;
+  padding: 0 2rem;
+}
+
+.hidden_drop{
+  width: 100%;
+  padding: 0rem 0rem;
+  visibility: hidden;
+  cursor: pointer;
+  margin-top: -6rem;
+}
+
+.hidden_drop .open_out{
+  visibility: visible;
+  margin-top: 6rem;
+}
+.hidden_drop .close_out{
+  visibility: hidden;
+  margin-top: -6rem;
+}
+
+.hidden_drop p{
+  text-align: right;
+  padding: 0 2rem;
+  color: #009D49;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 180%;
+}
+
+.hidden_drop #textarea{
+  max-width: 100%;
+  height: 60px;
+  position: relative;
+  padding: 0.5rem 0.45rem;
+  border-radius: 8px;
+  border: 2px solid #333333;
+  margin-top: 0rem;
+}
+
+/* .hidden_drop #submit{
+  position: absolute;
+  margin-top: -4rem;
+  right: 10rem;
+  padding: 0.8rem;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  background: #004B9D;
+  font-family: 'spectral';
+  border-radius: 8px;
+  cursor: pointer;
+} */
+
+

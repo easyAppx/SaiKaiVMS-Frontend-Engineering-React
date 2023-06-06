@@ -1,0 +1,165 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%),hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(180, 2%, 8%);
+  --greyColor: hsl(240, 2%, 52%);
+  --lightgreyColor: #D9D9D9;
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --fade:#5C5A5A;
+}
+
+*{
+  font-family: 'spectral';
+}
+.mainEdit{
+  max-width: 100%; 
+  min-height: 100%;
+  position: relative;
+  top: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0em;
+}
+
+.mainInfo .appPage-content{
+  width: 100%;
+  min-height: fit-content;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.mainInfo .appPage-content .body_line{
+  padding: 0 8.5rem;
+  margin-bottom: 5rem;
+}
+
+.mainInfo .appPage-content .body_line .line{
+  width: 67%;
+  margin: 0 auto;
+  border: 2px solid #333333;
+}
+
+.mainInfo .appPage-content .action_edit_btn{
+  width: 100%;
+  padding: 2rem;
+  color: var(--fade);
+  font-size: 20px;
+  font-weight: 400;
+  padding: 1rem 8.5rem;
+  justify-content: space-between;
+}
+
+.action_edit_btn h2{
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  color: #000000;
+}
+
+.action_edit_btn a .whiteEditBtn{
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 250px;
+  height: 60px;
+  background: #FFF;
+  border: 2px solid #EB6223;
+  border-radius: 6px;
+  margin-top: rem;
+  /*link*/
+
+  color: #EB6223;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'lato';
+}
+
+.action_edit_btn a .whiteEditBtn:hover{
+  background: #FFF;
+  color: #EF814F;
+  border: 2px solid #EF814F
+}
+
+.action_edit_btn a .whiteEditBtn:active{
+  background: #FFF;
+  border: 2px solid #BC4E1C;
+  color: #BC4E1C;
+}
+
+/* form edit */
+.cardDetails{
+  width: 100%;
+  margin-top: 1rem;
+  padding: 1rem 0rem;  
+  text-align: left;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rightArm{
+  width: 100%;
+  padding: 1rem 0rem;  
+  margin-left: 5rem;
+  text-align: left;
+}
+
+.cardDetails .personalDetails{
+  width: 100%;
+  padding: 0rem 0rem;
+  margin-bottom: 3rem;
+ }
+
+ .cardDetails .personalDetails label{
+  color: var(--blackColor);
+  font-family: 'Spectral';
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 200%;
+}
+
+.cardDetails .personalDetails text{
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 180%;
+  color: #666666;
+}
+
+.cardDetails .personalDetails .textSkill{
+  margin-bottom: 1rem;
+}
+
+.cardDetails .personalDetails .spanRate{
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 180%;
+  color: #666666;
+  text-align: right;
+  position: absolute;
+  left: 56rem;
+}
+
+.cardDetails .personalDetails .userExp{
+  width: 100%;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 180%;
+  color: #666666;
+  text-align: justify;
+}
+
+
+

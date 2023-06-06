@@ -1,0 +1,318 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%),hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(180, 2%, 8%);
+  --greyColor: hsl(240, 2%, 52%);
+  --lightgreyColor: #D9D9D9;
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+}
+
+*{
+  font-family: 'spectral';
+}
+
+/* the grid*/
+
+.secSimilarJobs{
+  width: 210vh;
+  max-height: 460px;
+  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: auto;
+  margin-top: 1rem;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.secSimilarJobs .singleDestination{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: relative;
+  min-height: 450px;
+  width: 296px;
+  display: grid;
+  row-gap: 10px;
+  padding: 1rem;  
+  border: 1px solid var(--greyColor);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(73, 73, 217, 0.549);
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+
+.secSimilarJobs .singleDestination .imageDate {
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: -1.5rem;
+}
+.secSimilarJobs .singleDestination .imageDate img{
+  height: 35px;
+  width: 40px;
+}
+.secSimilarJobs .singleDestination .imageDate h3{
+  font-size: 10px;
+  font-weight: 400;
+  font-family: 'lato';
+  line-height: 180%;
+  color: #0B0222;
+}
+.secSimilarJobs .singleDestination .usaf h4{
+  left: 0;
+  top: -4.3em;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: 'lato';
+  line-height: 180%;
+  position: relative;
+  justify-self: start;
+  text-align: left;
+  color: #0B0222;
+}
+.secSimilarJobs .singleDestination .destTitle h5{
+  margin-top: -6.5rem;
+  font-weight: 600;
+  text-align: left;
+  justify-self: start;
+  font-family: 'Spectral';
+  font-size: 22px;
+  line-height: 150%;
+  color: #0B0222;
+}
+.secSimilarJobs .singleDestination .typeLocation{
+  margin-top: -14rem;
+}
+.secSimilarJobs .singleDestination .typeLocation{
+ justify-content: space-between;
+ padding: 0rem 0rem;
+}
+.secSimilarJobs .singleDestination .typeLocation .location{
+  color: #0B0222;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: 'lato';
+  line-height: 180%;
+}
+.secSimilarJobs .singleDestination .typeLocation .type{
+  color: #0B0222;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: 'lato';
+  line-height: 180%;
+  margin-top: -1rem;
+}
+
+/*
+.secContent .singleDestination .typeLocation img{
+  height: 13px;
+  width: 13px;
+  color: var(--fade);
+  margin-top: -1rem;
+  margin-left: rem;
+}
+*/
+
+.secSimilarJobs .singleDestination .para{
+  align-items: center;
+  height: 65px;
+  padding: 0.5rem;
+  background-color: #336FB1;
+  border-radius: 5px;
+  margin-top: -15rem;
+}
+.secSimilarJobs .singleDestination .para p{
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Lato';
+  font-weight: 400;
+  line-height: 12px;
+  margin-top: 0.5rem;
+}
+.secSimilarJobs .singleDestination .desc p{
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 180%;
+  text-align: justify;
+  color: #666666;
+  font-size: 12px;
+  margin-top: -9em;
+}
+.secSimilarJobs .singleDestination .buttonAV{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.secSimilarJobs .singleDestination .buttonAV .btnOne{
+  position: absolute;
+  justify-content: center;
+  width: 267px;
+  height: 40px;
+  background: #004B9D;
+  border: 2px solid #004B9D;
+  border-radius: 4px;
+  margin-top: -5em;
+  cursor: pointer;
+  margin-left: -9.5rem;
+
+  /*link*/
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 180%;
+}
+.secSimilarJobs .singleDestination .buttonAV .btnOne:hover{
+  background: #003C7E;
+  color: #fff;
+}
+.secSimilarJobs .singleDestination .buttonAV .btnTwo{
+  position: absolute;
+  justify-content: center;
+  width: 267px;
+  height: 40px;
+  background: #fff;
+  border: 2px solid #004B9D;
+  border-radius: 4px;
+  margin-top: -1.5em;
+  cursor: pointer;
+  /*link*/
+  color: #004B9D;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 180%;
+}
+.secSimilarJobs .singleDestination .buttonAV .btnTwo:hover{
+  background: #7eabdb;
+  color: #003C7E;
+}
+.secSimilarJobs .errorMsg{
+  position: relative;
+  top: 7rem;
+  text-align: center;
+  align-self: center;
+  margin: 0 auto;
+}
+.nextPage{
+  width: auto;
+  padding: 1rem;
+  justify-content: right;
+  margin-bottom: 5rem;
+  margin-top: 1rem;
+}
+.nextPage a{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 180%;
+  color: #003C7E;
+  text-align: end;
+}
+.nextPage img{
+  width: 18px;
+  height: 20px;
+  margin-left: 0.5rem;
+}
+.nextPage .hide{
+  visibility: hidden;
+}
+.nextPage .show{
+  visibility: visible;
+}
+@media screen and (min-width: 1200px) {
+  .jobGrid .secSimilarJobs {
+    padding: 1rem 2rem;
+  }
+  .nextPage{
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .secSimilarJobs{
+    justify-content: center;
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  .jobGrid .secSimilarJobs {
+    padding: 1rem 2rem;
+  }
+  .nextPage{
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .jobGrid .secSimilarJobs {
+    padding: 1rem 6rem;
+  }
+  .nextPage{
+    padding: 1rem 10rem;
+  }
+}
+
+
+@media screen and (max-width: 870px) {
+  .jobGrid .secSimilarJobs {
+    padding: 0.6rem 4rem;
+  }
+  .secSimilarJobs .singleDestination{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    min-height: 450px;
+    width: 250px;
+    display: grid;
+    row-gap: 10px;
+    padding: 1rem;  
+    border: 1px solid var(--greyColor);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(140, 140, 141, 0.549);
+    overflow: hidden;
+    transition: 0.3s ease;
+  }
+  .nextPage{
+    padding: 0.6rem 12.5rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .jobGrid .secContent {
+    padding: 0.6rem 4rem;
+  }
+  .nextPage{
+    padding: 0.6rem 12.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .jobGrid .secSimilarJobs {
+    padding: 0.6rem 4rem;
+  }
+  .nextPage{
+    padding: 0.6rem 10rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .jobGrid .secSimilarJobs {
+    padding: 0.6rem 4rem;
+  }
+  .nextPage{
+    padding: 0.6rem 10rem;
+  }
+}

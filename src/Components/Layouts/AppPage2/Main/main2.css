@@ -1,0 +1,164 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%),hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(180, 2%, 8%);
+  --greyColor: hsl(240, 2%, 52%);
+  --lightgreyColor: #D9D9D9;
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --fade:#5C5A5A;
+}
+*{
+  font-family: 'spectral';
+}
+
+/*cards*/
+.cardDropdownFull{
+  width: 100%;
+  padding: 2rem 0rem;  
+  text-align: left;
+  justify-content: space-between;
+}
+
+.cardDropdownFull .cardDropWrapper{
+  width: 100%;
+  padding: 0rem 0rem;
+ }
+
+.cardDropdownFull .cardDropWrapper label{
+  color: var(--blackColor);
+  font-family: 'Spectral';
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 200%;
+}
+
+.cardDropdownFull .cardDropWrapper #dropmenu{
+  width: 100%;
+  height: 60px;
+  border-radius: 8px;
+  border: 2px solid #333333;
+  color: #333333;
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+}
+
+.cardDropdownFull .cardDropWrapper .skill_list{
+  background: #F5F5F5;
+  border: 1px solid #CCCCCC;
+  border-radius: 8px;
+  width: 100%;
+  height: 60px;
+  padding-left: 0.5rem;
+}
+
+.cardDropdownFull .cardDropWrapper .skill_list li{
+  color: white !important;
+  background-color: #004B9D !important;
+  padding: 0.7rem;
+  font-size: 12px;
+  line-height: 180%;
+  border-radius: 4px;
+  margin: 0.5rem;
+}
+
+.cardDropdownFull .cardDropWrapper .ratings{
+  width: 100%;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+  background: #FFF;
+  border: 2px solid #999999;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+}
+
+.cardDropdownFull .cardDropWrapper .ratings .grp{
+  margin: 4.5rem;
+  margin-top: 4.2rem;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+.cardDropdownFull .cardDropWrapper .ratings .grp button{
+  width: 32px;
+  height: 32px;
+  color: #FFF;
+  position: absolute;
+  background: #004B9D;  
+  border: 1px solid #004B9D;
+  border-radius: 3px;
+  right: 18rem;
+}
+
+.cardDropdownFull .cardDropWrapper #dropmultiple{
+  width: 100%;
+  height: 60px;
+  border-radius: 8px;
+  border: 2px solid #333333;
+  color: #333333;
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+  padding-top: 0.9rem;
+}
+
+.ui.multiple.dropdown > .label {
+  color: white !important;
+  background-color: #004B9D !important;
+  padding: 0.7rem;
+  font-size: 12px;
+  line-height: 180%;
+  margin-top: -0.4rem;
+  border-radius: 4px;
+}
+
+.cardDropdownFull .cardDropWrapper .portfolio{
+  width: 100%;
+  height: 60px;
+  border-radius: 8px;
+  border: 2px solid #333333;
+  color: #333333;
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+  padding: 1rem;
+}
+
+.cardDropdownFull .cardDropWrapper .exp-btn{
+  justify-content: space-between;
+}
+
+.cardDropdownFull .cardDropWrapper .labelFlex{
+  justify-content: space-between;
+}
+
+.cardDropdownFull .cardDropWrapper .labelFlex .textRange{
+  color: #009D49;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 180%;
+}
+
+.cardDropdownFull .cardDropWrapper textarea{
+  width: 100%;
+  height: 100px;
+  margin-top: -0.5rem;
+  margin-bottom: rem;
+  padding: 0.5rem 0.45rem;
+  border-radius: 8px;
+  border: 2px solid #333333;
+}
+

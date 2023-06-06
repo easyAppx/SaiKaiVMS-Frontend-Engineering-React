@@ -1,0 +1,162 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%),hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(180, 2%, 8%);
+  --greyColor: hsl(240, 2%, 52%);
+  --lightgreyColor: #D9D9D9;
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'spectral';
+}
+
+p{
+  color: var(--fade);
+  font-size: 20px;
+  font-weight: 400;
+  text-align: justify;
+  font-family: 'lato';
+}
+
+a{
+  font-family: 'lato';
+}
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #002D5E;
+  width: 100%;
+  height: 100px;
+  z-index: 200;
+  border-bottom: 1px solid var(--greyColor);
+}
+.header .logo .app-logo{
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+.navBar .navLists{
+  margin-right: 3rem;
+}
+.navLang{
+  padding-right: 4.5rem;
+}
+.navBar .navLists .navItem .navLink{
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 150%;
+  font-family: 'spectral';
+  color: var(--whiteColor);
+  padding: 2rem;
+}
+.navBar .navLists .navItem .navLink:hover{
+  color: #004B9D;
+}
+.navBar .navLoginBall{
+  align-items: center;
+}
+.navBar .navLoginBall a img{
+  height: 50px;
+  width: 50px; 
+  margin-top: 0.6rem;
+}
+.navBar .navLoginBall a img:hover{
+  width: 60px;
+  height: 60px;
+  transition: all .5s ease-in;
+}
+
+.ui .flag{
+  transform: scale(1.7) !important;
+  z-index: 100px;
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header{
+    padding: 1rem 6rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .header{
+    padding: 0.6rem 4rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header{
+    padding: 0.6rem 4rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header{
+    padding: 0.6rem 4rem;
+  }
+}
+@media screen and (max-width: 470px) {
+  .header{
+    padding: 0.6rem 4rem;
+  }
+  .header .logo, .navBar{
+    padding: 0.6rem 4rem;
+    position: absolute;
+  }
+  .header .logo .app-logo{
+    height: 45px;
+    width: 70px;
+    cursor: pointer;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+  .navBar .navLists .navItem, .selectBox{
+    padding: 0.5rem;
+  }
+  .navBar .navLists .navItem .navLink{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--blackColor);
+  }
+  .selectBox .langSelect{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'spectral', 'roboto';
+    color: var(--blackColor);
+    padding: 0.5rem;
+    width: auto;
+    border: 1px solid var(--blackColor);
+    border-radius: 10px;
+  }
+  .logo{
+    margin-left: -6rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .header .logo, .navBar{
+    padding: 0.6rem 2rem;
+    position: absolute;
+  }
+  .logo{
+    margin-left: -6rem;
+  }
+}

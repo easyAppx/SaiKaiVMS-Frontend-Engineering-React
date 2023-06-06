@@ -1,0 +1,47 @@
+  
+  .foot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-left: -4rem;
+    margin-top: 13rem;
+}
+
+  .foot-title {
+    margin-top: 12rem;
+    text-align: center;
+    /* color: #EB6223; */
+    font-size: 25px;
+  }
+  .foot-title a{
+      color: #EB6223;
+  }
+  .foot-link {
+    margin-top: 7px;
+    text-align: center;
+    color: #EB6223;
+    font-size: 25px;
+  }
+
+  
+  @media screen and (max-width: 768px) {
+    .foot{
+      margin-left: -17rem;
+    }
+    .foot-title {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .foot-link {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+}
+@media screen and (max-width: 1602px) {
+  .foot{
+      margin-left: calc(2% - (74% / 2));
+      margin-top: calc(43% - (50% / 2))
+  }
+}

@@ -1,0 +1,110 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%),hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(180, 2%, 8%);
+  --greyColor: hsl(240, 2%, 52%);
+  --lightgreyColor: #D9D9D9;
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --fade:#5C5A5A;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'spectral';
+}
+
+p{
+  color: var(--fade);
+  font-size: 20px;
+  font-weight: 400;
+  text-align: justify;
+  font-family: 'lato';
+}
+
+a{
+  font-family: 'lato';
+}
+
+.container-fluid-5{
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 570px;
+  padding: 1rem 2rem;
+  background: #ffff;  
+  margin-top: 2rem;
+}
+
+.container-fluid-5 h4{
+  font-size: 32px;
+  font-family: 'Spectral';
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #004B9D;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+.accordion{
+  margin-bottom: 2rem;
+}
+.accordionBody{
+  border: 1px solid #004B9D;
+  border-radius: 8px;
+  align-items: center;
+}
+.accordionTitle{
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+.accordionTitle label{
+  margin-left: -0.7rem;
+  justify-content: start;
+  justify-content: space-between;
+  font-size: 18px;
+  line-height: 300%;
+  font-weight: 400px;
+  color: #333333;
+  align-items: center;
+  cursor: pointer;
+}
+.accordionTitle .accordionIcon{
+  height: 15px;
+  width: 15px;
+  right: 3.5rem;
+  margin-top: 1.5rem;
+  position: absolute;
+  justify-content: flex-end;
+}
+.accordionContent{
+  overflow: hidden;
+  max-height: 0;
+  transition: all .10s ease-in;
+  transition-delay: 5s;
+}
+
+.accordionContent .show{
+  height: auto;
+  max-height: 999px;
+  transition: all .10s ease-in;
+}
+
+.accordionMainContent{
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 180%;
+  text-align: justify;
+  font-family: 'lato';
+  padding: 1rem;
+  padding-left: 1.5rem;
+  border-top: 1px solid #004B9D;
+  border-style: dotted;
+}
+
+

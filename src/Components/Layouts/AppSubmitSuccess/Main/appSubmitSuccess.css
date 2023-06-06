@@ -1,0 +1,96 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%),hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(180, 2%, 8%);
+  --greyColor: hsl(240, 2%, 52%);
+  --lightgreyColor: #D9D9D9;
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --fade:#5C5A5A;
+}
+*{
+  font-family: 'spectral';
+}
+.align{
+  max-width: 100%;
+  position: relative;
+  margin: 0 auto;
+  top: 1rem;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0em;
+  position: relative;
+}
+
+.success{
+  max-width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: rem;
+}
+
+.successMsg{
+  margin-top: rem;
+}
+.success .imgGood{
+  margin: 0 auto;
+  height: 300px;
+  width: 200px;
+}
+.successMsg .appSS{
+  color: #000000;
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 150%;
+  margin-top: -4rem;
+}
+.successMsg .msg{
+  color: #000000;
+  margin-top: -1rem;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 180%;  
+  text-align: center;
+}
+
+.align .action_btn{
+  width: 100%;
+  padding: 2rem;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.align .action_btn a .orangeBtn{
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 350px;
+  height: 60px;
+  background: #EB6223;
+  border-radius: 6px;
+  margin-top: rem;
+  /*link*/
+
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'lato';
+}
+
+.align .action_btn a .orangeBtn:hover{
+  background: #BC4E1C;
+  color: white;
+}
+
+.align .action_btn a .orangeBtn:active{
+  background: #EF814F;
+  color: white;
+}

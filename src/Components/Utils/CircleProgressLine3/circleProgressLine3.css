@@ -1,0 +1,57 @@
+
+/* circles and lines*/
+.cont3{
+  width: 100%;
+  padding-top: 20px;
+  text-align: center;
+  justify-content: center;
+  padding: 0 0rem;
+  
+  justify-content: center;
+}
+.lines3{
+  width: 50%;
+  height: 45px;
+  position: relative;
+}
+.lines3::after, .lines3::before{
+  content: '';
+  position: absolute;
+  margin: auto;
+  height: 5px;
+  width: 70%;
+  top: 45%;
+  background: #007E3A;
+}
+.lines3::after{
+  left: -10rem;
+}
+.lines3::before{
+  right: -10rem;
+}
+.circleApp3{
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  padding-top: 0.5rem; 
+  border-radius: 50%;
+  border: 4px solid #D9D9D9;
+}
+.one3{
+  border: 4px solid #007E3A;
+  font-weight: 700;
+  margin-left: 8.5rem;
+  color: #007E3A;
+}
+.two3{
+  border: 4px solid #007E3A;
+  font-weight: 700;
+  color: #007E3A;
+}
+.three3{
+  margin-right: 8.5rem;
+  border: 4px solid #007E3A;
+  font-weight: 700;
+  color: #007E3A;
+}
+/* circle end*/

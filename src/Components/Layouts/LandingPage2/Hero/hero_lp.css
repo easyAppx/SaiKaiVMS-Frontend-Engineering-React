@@ -1,0 +1,79 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%),hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(180, 2%, 8%);
+  --greyColor: hsl(240, 2%, 52%);
+  --lightgreyColor: #D9D9D9;
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --fade:#5C5A5A;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'spectral';
+}
+
+p{
+  color: var(--fade);
+  font-size: 20px;
+  font-weight: 400;
+  text-align: justify;
+  font-family: 'lato';
+}
+
+a{
+  font-family: 'lato';
+}
+
+.container-fluid-d{
+  display: flex;
+  width: 100%;
+  min-height: 780px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  background: #FFF;
+}
+
+.vmsWriteUp-d{ 
+  width: 50%;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  justify-content: center;
+  letter-spacing: 0em;  
+}
+
+.vmsWriteUp-d h1{
+  width: 100%;
+  font-family: 'Spectral';
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 150%;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #004B9D;
+}
+.vmsWriteUp-d p{
+  color: #666666;
+  font-size: 20px;
+  line-height: 180%;
+  font-weight: 400;
+  text-align: justify;
+  font-family: 'lato';
+}
+.vmsImage-d{
+  width: 45%;
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+  align-items: center;
+  justify-content: right; 
+}
+.vmsImage-d img{
+  height: 600px;
+  width: px;
+  background-size: cover;
+  display: block;
+}

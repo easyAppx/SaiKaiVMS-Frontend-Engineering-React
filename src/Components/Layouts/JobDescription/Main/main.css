@@ -1,0 +1,312 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%),hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(180, 2%, 8%);
+  --greyColor: hsl(240, 2%, 52%);
+  --lightgreyColor: #D9D9D9;
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --fade:#5C5A5A;
+}
+*{
+  font-family: 'spectral';
+}
+
+p{
+  color: #666666;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 180%;
+  text-align: justify;
+  font-family: 'lato';
+  text-align: left;
+}
+
+.usafRole{
+  color: #666666;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 180%;
+  text-align: justify;
+  font-family: 'lato';
+  text-align: left;
+}
+
+.main-2 {
+  width: 100%;
+  margin-top: rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0em;
+  position: relative;
+  top: 11rem;
+}
+
+.main-2 .content{
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 15rem;
+}
+.main-2 .content .uiUx{
+  text-align: center;
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  color: #004B9D;
+  line-height: 150%;
+  margin-top: 2rem;
+}
+.main-2 .content h4{
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #009D49;
+  line-height: 180%;
+  margin-top: -0.3rem;
+}
+.dot{
+  width: 10px;
+  height: 10px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.usafRole{
+  text-align: justify;
+}
+.main-2 .content h5{
+  margin-top: 3rem;
+  color: #004B9D;
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 150%;
+  text-align: left;
+}
+.main-2 .content .paraOne li{
+  color: #666666;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 180%;
+  text-align: justify;
+  font-family: 'lato';
+  text-align: left;
+}
+.main-2 .content .paraTwo{
+  color: #666666;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 180%;
+  text-align: justify;
+  font-family: 'lato';
+  text-align: left;
+}
+.main-2 .content li{
+  list-style-type: disc;
+  margin-left: 1.5em;
+}
+
+/*
+.contactCarrierOne{
+  width: 100%;
+  height: min-content;
+  background: #FFFFFF;
+  border: 2px solid #99B7D8;
+  border-radius: 16px;
+  justify-content: space-between;  
+  padding: 1rem 2rem;
+  flex-grow: 0;
+  display: flex;
+  margin-bottom: 5rem
+}*/
+
+.contactSperator{
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+.contactCarrier{
+  width: 49%;
+  height: 100px;
+  background: #FFFFFF;
+  border: 2px solid #99B7D8;
+  border-radius: 16px;
+  justify-content: space-between;  
+  align-items: center;
+  padding: 4rem 2rem;
+  flex-grow: 0;
+  display: flex;
+  margin-top: 5rem;
+  margin-bottom: 3rem
+}
+.setOne{
+  width: max-content;
+  justify-content: space-between;
+}
+.setOne .ellipseBall{
+  width: 80px;
+  height: 80px;
+  margin-right: 1rem;
+  margin-top: -1rem;
+}
+.setOne .contactWrite{
+  justify-content: left;
+  text-align: left;
+  align-self: center;
+}
+.setOne .contactWrite h2{
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 50%;
+  color: #333333;
+}
+.setOne .contactWrite h6{
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 180%;
+  color: #666666;
+}
+/*
+.setTwo{
+  align-items: center;
+  justify-content: space-between;
+}
+.contactCarrier .setTwo a{
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+.contactCarrier .setTwo a button{
+  display: flex;
+  flex-direction: row;
+  padding: 12px 10px;
+  text-align: center;
+  gap: 18px;
+  width: 100px;
+  height: 48px;
+  background: #FFFFFF;
+  border: 2px solid #004B9D;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 180%;
+  color: #004B9D;
+}
+.contactCarrier .setTwo a button span .mail_Icon{
+  width: 30px;
+  height: 30px; 
+  margin-top: -0.4rem;
+}
+.contactCarrier .setTwo a button span .downVector{
+  width: 15px;
+  height: 18px; 
+  margin-top: 0.15rem;
+}*/
+
+.main-2 .action_btn{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+.main-2 .action_btn a .apply_btn{
+  gap: 8px;
+  width: 350px;
+  height: 60px;
+  background: #EB6223;
+  border-radius: 4px;
+  position: absoute;
+  margin-top: 5rem;
+  margin-left: rem;
+  /*link*/
+
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'lato';
+}
+
+.main-2 .action_btn a .apply_btn:hover{
+  background: #BC4E1C;
+  color: white;
+}
+
+.main-2 .action_btn a .apply_btn:active{
+  background: #EF814F;
+  color: white;
+}
+
+.similarJobs{
+  margin-top: 7rem;
+  justify-content: start;
+}
+.similarJobs .heading{
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+  color: #004B9D;
+  text-align: left;
+}
+
+@media screen and (min-width: 1200px) {
+  .main-2 .content {
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main-2 .content {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .main-2 .content{
+    padding: 1rem 6rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .main-2 .content{
+    padding: 0.6rem 4rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main-2 .content{
+    padding: 0.6rem 4rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main-2 .content{
+    padding: 0.6rem 4rem;
+  }
+  .main-2 .apply_btn{
+    margin-bottom: 5rem;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+    height: 40px;
+    background: #5C5A5A;
+    border-radius: 10px;
+  }
+}

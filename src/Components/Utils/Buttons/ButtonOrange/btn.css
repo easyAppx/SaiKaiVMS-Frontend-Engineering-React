@@ -1,0 +1,42 @@
+:root {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%),hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(180, 2%, 8%);
+    --greyColor: hsl(240, 2%, 52%);
+    --lightgreyColor: #D9D9D9;
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --fade:#5C5A5A;
+}
+
+.btnOrange a .orangeBtn{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 300px;
+    height: 60px;
+    background: #EB6223;
+    border-radius: 4px;
+    margin-top: rem;
+
+    /*link*/
+
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'lato';
+}
+
+.btnOrange a .orangeBtn:hover{
+    background: #BC4E1C;
+    color: white;
+}
+
+.btnOrange a .orangeBtn:active{
+    background: #EF814F;
+    color: white;
+}

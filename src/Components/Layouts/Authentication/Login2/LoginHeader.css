@@ -1,0 +1,337 @@
+.Login {
+  /* Add padding to the top of the Login section */
+  padding-top: 13rem;
+
+  /* The following lines are commented out */
+  /* background: #000; */
+  /* margin-top: 80rem; */
+}
+
+/* The style for the header of the login page */
+.Login__h1 {
+  /* Set the text color to a blue color */
+  color: #004B9D;
+
+  /* Center the text */
+  text-align: center;
+
+  /* Set the font family to Spectral */
+  font-family: Spectral;
+
+  /* Set the font weight to bold */
+  font-weight: 700;
+
+  /* Set the font size to 64 pixels */
+  font-size: 50px;
+ 
+  /* Set the line height to 96 pixels */
+  line-height: 96px;
+}
+
+/* The style for the social media buttons */
+.Login__SocialButton {
+  /* Set the width to 95% of the container */
+  width: 96%;
+
+  /* Set the height to 50% */
+  height: 90%;
+  padding: 45px 35px;
+
+  /* Set the left margin to 19 pixels */
+  margin-left: 2rem;
+
+  /* Set the padding to create a gap between the buttons and the container *
+
+
+
+  /* Set the top margin to 30 pixels */
+  margin-top: 30px;
+
+  /* Set the gap between the buttons to 8 pixels */
+  gap: 8px;
+
+  /* Set the background color to a light gray color */
+  background: #FFFFFF;
+
+  /* Set the border radius to 24 pixels */
+  border-radius: 24px;
+
+  /* Center the content horizontally and vertically */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+/* The style for the social media button container */
+.Login__SocialButton__SocialMedia {
+  /* Center the content horizontally */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  /* Set the padding to create a gap between the buttons */
+  padding: 15px 107px 16px;
+
+  /* Set the gap between the buttons to 10 pixels */
+  gap: 60px;
+  ;
+
+
+}
+
+/* The style for the Google login button */
+.Login__SocialButton__SocialMedia__Google {
+  /* Set the background color to Google's blue color */
+  background: #007AFF;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* Set the border radius to 4 pixels */
+  border-radius: 4px;
+  gap: 8px;
+  /* Set the padding to create a gap between the text and the button */
+  /* padding: 15px 129px 16px; */
+  /* padding: 10px; */
+  width: 300px;
+  height: 80px;
+  font-size: 1.5rem;
+  color: #FFFFFF;
+}
+
+.Login__SocialButton__SocialMedia__Google img {
+  width: 40px;
+}
+
+/* The style for the LinkedIn login button */
+.Login__SocialButton__SocialMedia__LinkedIn {
+  /* Set the background color to LinkedIn's blue color */
+  background: #017BBE;
+
+  /* Set the border radius to 4 pixels */
+  border-radius: 4px;
+
+  /* Set the padding to create a gap between the text and the button */
+  /* padding: 15px 99px 16px; */
+  /* width: 300px; */
+  /* height: 80px; */
+  font-size: 20px;
+  color: #FFFFFF;
+  /* gap: 30px; */
+  
+  
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+/* padding: 15px 73px 16px; */
+gap: 30px;
+
+width: 451px;
+height: 88px;
+
+background: #017BBE;
+border-radius: 4px;;
+}
+
+.Login__Middle {
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  /* identical to box height, or 42px */
+  text-align: center;
+  color: #666666;
+}
+
+
+/* Styles for screens larger than 1200px */
+@media screen and (min-width: 1200px) {
+  .Login {
+    padding-top: 13rem;
+  }
+
+  .Login__h1 {
+    font-size: 3.7rem;
+    line-height: 96px;
+  }
+
+  .Login__SocialButton {
+    width: 96%;
+    height: 90%;
+    padding: 45px 35px;
+    margin-left: 2rem;
+    margin-top: 30px;
+    gap: 8px;
+    background: #FFFFFF;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .Login__SocialButton__SocialMedia {
+    padding: 15px 107px 16px;
+    gap: 60px;
+  }
+
+  .Login__SocialButton__SocialMedia__Google {
+    width: 300px;
+    height: 80px;
+    font-size: 1.5rem;
+  }
+
+  .Login__SocialButton__SocialMedia__LinkedIn {
+    width: 300px;
+    height: 80px;
+    font-size: 20px;
+  }
+
+  .Login__Middle {
+    font-size: 28px;
+    line-height: 150%;
+  }
+}
+
+/* Styles for screens between 768px and 1200px */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .Login {
+    padding-top: 8rem;
+  }
+
+  .Login__h1 {
+    font-size: 3.2rem;
+    line-height: 80px;
+  }
+
+  .Login__SocialButton {
+    width: 90%;
+    height: 80%;
+    padding: 35px 25px;
+    margin-left: 1rem;
+    margin-top: 20px;
+    gap: 6px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+  }
+
+  .Login__SocialButton__SocialMedia {
+    padding: 10px 70px 12px;
+    gap: 50px;
+  }
+
+  .Login__SocialButton__SocialMedia__Google {
+    width: 250px;
+    height: 60px;
+    font-size: 1.2rem;
+  }
+
+  .Login__SocialButton__SocialMedia__LinkedIn {
+    width: 250px;
+    height: 60px;
+    font-size: 18px;
+  }
+
+  .Login__Middle {
+    font-size: 24px;
+    line-height: 140%;
+  }
+}
+
+/* Styles for screens smaller than 768px */
+@media screen and (max-width: 767px) {
+  .Login {
+    padding-top: 5rem;
+  }
+
+  .Login__h1 {
+    font-size: 2.5rem;
+    line-height: 60px;
+  }
+
+  .Login__SocialButton {
+    width: 80%;
+    height: 70%;
+    padding: 30px 20px;
+     margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 20px;
+    /* gap: 1px; */
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .Login__SocialButton__SocialMedia__Google {
+    width: 200px;
+    height: 60px;
+    font-size: 1.2rem;
+  }
+
+  .Login__SocialButton__SocialMedia__LinkedIn {
+    width: 200px;
+    height: 60px;
+    font-size: 18px;
+  }
+
+}
+
+
+@media screen and (max-width: 767px) {
+  .Login {
+    padding-top: 9rem;
+  }
+
+  .Login__h1 {
+    font-size: 2.5rem;
+    line-height: 48px;
+  }
+
+  .Login__SocialButton {
+    margin-top: 20px;
+    padding: 30px 20px;
+  }
+    .Login__SocialButton__SocialMedia {
+      padding: 10px 40px 12px;
+      gap: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .Login__SocialButton__SocialMedia__Google {
+      width: 220px;
+      height: 60px;
+      font-size: 1.2rem;
+    }
+
+    .Login__SocialButton__SocialMedia__Google img {
+      width: 30px;
+    }
+
+    .Login__SocialButton__SocialMedia__LinkedIn {
+      width: 220px;
+      height: 60px;
+      font-size: 1.2rem;
+    }
+  }
+
+  .Login__Middle {
+    display:flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    color: green;
+  }

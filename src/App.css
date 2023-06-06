@@ -1,0 +1,605 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Open Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+@import url('https://fonts.googleapis.com/css2?family=Spectral&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@300;400&display=swap');
+
+/*
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 1rem 8.5rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    padding: 0 8.5rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header{
+    padding: 1rem 6rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .header{
+    padding: 0.6rem 4rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header{
+    padding: 0.6rem 4rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header{
+    padding: 0.6rem 4rem;
+  }
+}
+ */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.generalBg{
+  background: #f8f5f5;
+}
+
+#generalBg{
+  background: #f8f5f5;
+}
+
+.jobsOverlayBg{
+  background: fff;
+  border-radius: 45px 45px 45px 45px;
+}
+
+.generalBgTwo{
+  background: fff;
+  border-radius: 45px 45px 45px 45px;
+}
+
+/*general appPage container*/
+
+/*popup*/
+.app-page-pop{
+  visibility: hidden;
+}
+
+.app-page-pop .visible{
+  visibility: visible;
+}
+
+.app-page-pop .hidden{
+  visibility: hidden;
+}
+
+#overlay {
+  position: fixed;
+  max-width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  z-index: 300;
+  background-color: rgba(0,0,0,0.8);
+  border-radius: 0px 0px 0px 0px;
+}
+
+#appPage-modal {
+  max-width: 90.5%;
+  min-height: 50vh !important;  
+  margin: 0 auto;
+  top: 7rem;
+  left: 0;
+  right: 0;
+  bottom: 2rem;
+  cursor: pointer;
+  z-index: 500;
+  position: fixed;
+  overflow-y: auto;
+  background: #fff;
+  border-radius: 46px 46px 45px 45px;
+}
+
+.fixed {
+  position: static;
+  overflow-y: none;
+}
+/*end of popup*/
+
+/* appMain */
+.mainInfo {
+  max-width: 100%; 
+  position: relative;
+  top: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0em;
+}
+
+.mainInfo .appPage-content{
+  max-width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: rem;
+}
+
+.mainInfo .appPage-content h1{
+  color: var(--blackColor);
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 150%;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.mainInfo .appPage-content h3{
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 180%;
+  color: #666666;
+  margin-top: -1rem;
+}
+
+.mainInfo .appPage-content .form{
+  width: 100%;
+  margin-top: 2rem;
+  padding: 0 8.5rem;
+}
+
+/******/
+
+/* responsiveness */
+@media screen and (min-width: 1024px) {
+  .mainInfo .appPage-content {
+    padding: 1rem 8.5rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .mainInfo .appPage-content {
+    padding: 0 8.5rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .mainInfo .appPage-content{
+    padding: 1rem 6rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .mainInfo .appPage-content{
+    padding: 0.6rem 4rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .mainInfo .appPage-content{
+    padding: 0.6rem 4rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .mainInfo .appPage-content{
+    padding: 0.6rem 4rem;
+  }
+}
+
+/******/
+
+.btnWht_Org{
+  margin: 0 auto;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 2rem;
+  position: relative;
+  margin-left: rem;
+  margin-top: 9rem;
+  bottom: -4rem !important;
+}
+
+.botton a .orangeBtn{
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 350px;
+  height: 60px;
+  background: #EB6223;
+  border-radius: 6px;
+  margin-top: rem;
+  /*link*/
+
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'lato';
+}
+
+.botton a .orangeBtn:hover{
+  background: #BC4E1C;
+  color: white;
+}
+
+.botton a .orangeBtn:active{
+  background: #EF814F;
+  color: white;
+}
+
+.botton a .whiteBtn{
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 350px;
+  height: 60px;
+  background: #FFF;
+  border: 2px solid #EB6223;
+  border-radius: 6px;
+  margin-top: rem;
+  /*link*/
+
+  color: #EB6223;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'lato';
+}
+
+.botton a .whiteBtn:hover{
+  background: #FFF;
+  color: #EF814F;
+  border: 2px solid #EF814F
+}
+
+.botton a .whiteBtn:active{
+  background: #FFF;
+  border: 2px solid #BC4E1C;
+  color: #BC4E1C;
+}
+
+/*yes_no_button*/
+
+.yes_no_botton a .orangeYesBtn{
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 250px;
+  height: 60px;
+  background: #EB6223;
+  border-radius: 6px;
+  margin-top: rem;
+  /*link*/
+
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'lato';
+}
+
+.yes_no_botton a .orangeYesBtn:hover{
+  background: #BC4E1C;
+  color: white;
+}
+
+.yes_no_botton a .orangeYesBtn:active{
+  background: #EF814F;
+  color: white;
+}
+
+.yes_no_botton a .whiteNoBtn{
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 250px;
+  height: 60px;
+  background: #FFF;
+  border: 2px solid #EB6223;
+  border-radius: 6px;
+  margin-top: rem;
+  /*link*/
+
+  color: #EB6223;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'lato';
+}
+
+.yes_no_botton a .whiteNoBtn:hover{
+  background: #FFF;
+  color: #EF814F;
+  border: 2px solid #EF814F
+}
+
+.yes_no_botton a .whiteNoBtn:active{
+  background: #FFF;
+  border: 2px solid #BC4E1C;
+  color: #BC4E1C;
+}
+
+/* exp-btn */
+.exp-btn a .yesBtn{
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 250px;
+  height: 60px;
+  background: #004B9D;
+  border-radius: 6px;
+  margin-top: rem;
+  /*link*/
+
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'lato';
+}
+
+.exp-btn a .yesBtn:hover{
+  background: #336FB1;
+  color: white;
+}
+
+.exp-btn a .yesBtn:active{
+  background: #003C7E;
+  color: white;
+}
+
+.exp-btn a .noBtn{
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 250px;
+  height: 60px;
+  background: #004B9D;
+  border: 2px solid #004B9D;
+  border-radius: 6px;
+  margin-top: rem;
+  /*link*/
+
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'lato';
+}
+
+.exp-btn a .noBtn:hover{
+  background: #336FB1;
+  color: #FFF;
+  border: 2px solid #336FB1;
+}
+
+.exp-btn a .noBtn:active{
+  background: #003C7E;
+  border: 2px solid #003C7E;
+  color: #FFF;
+}
+
+/*popup*/
+.delete_pop_body{
+  visibility: hidden;
+  position: absolute;
+}
+
+#popHead h1{
+  color: #000;
+  font-family: 'spectral';
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 150%;
+  text-align: center;
+}
+
+.delete_pop_body .deleteInfo p{
+  color: #666666;
+  font-family: 'spectral';
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 180%;
+  text-align: center;
+}
+
+.delete_pop_body .pop_out{
+  max-width: 55%;
+  min-height: 420px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10rem;
+  bottom: 7rem;
+  left: 2rem;
+  right: 2rem;
+  position: fixed;
+  z-index: 100;
+  visibility: visible;
+  background: #F5F5F5;
+  border: 1px solid #CCCCCC;
+  border-radius: 16px !important;
+  box-shadow: 0px 0px 52px 8px rgba(0, 0, 0, 0.45) !important;
+}
+
+.delete_pop_body .close_out{
+  visibility: hidden;
+}
+
+.yes_no_botton{
+  margin: 0 auto;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 2rem;
+  position: relative;
+  margin-left: rem;
+  margin-top: 6rem;
+}
+
+:root{
+    --PrimarysColor: hsl(199, 100%, 33%);
+    --SecondarysColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%),hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 246);
+    --cardBG: rgb(225, 225, 235);
+    --PrimaryColor: hsl(122, 56%, 60%);
+    --SecondaryColor: hsl(122, 44%, 63%);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+  --tw-gradient-from: #4677ac;
+  --tw-gradient-to: #4677ac;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #4677ac;
+}
+  ::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+@media (min-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+}
+
+section{
+  width: 100%;
+}
+
+.container-fluid{
+  background: #fffafa;
+}
+
+button{
+  width: max-content;
+  height: 55px;
+  cursor: pointer;
+  text-align: center;
+  font-family: 'Lato';
+  font-weight: bold;
+  font-size: 16px;
+  gap: 8px;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'spectral';
+  line-height: 150%;
+}
+
+p{
+  color: var(--fade);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 180%;
+  text-align: justify;
+  font-family: 'lato';
+}
+
+label{
+
+  font-family: 'spectral';
+}
+
+a{
+  text-decoration: none;
+  font-family: 'lato';
+  line-height: 180%;
+}
+
+li{
+    list-style: none;
+}
+
+.section{
+    padding: 4rem 0 2rem;
+ }
+
+.container{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.icon{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.grid{
+    display: grid;
+    align-items: center;
+}
+
+.btn{
+  padding: .6rem 1.5rem;
+  background: var(--gradientColor);
+  border: none;
+  outline: none;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+
+.btn a{
+ color: var(--whiteColor);
+ font-weight: 500;
+}
+
+.btn:hover{
+    background: var(--SecondaryColor);
+}
+
+
+img, video{
+width: 100%;
+height: auto;
+}
+
+body{
+    background: var(--whiteColor);
+}
+
+::selection{
+    background: var(--PrimaryColor);
+    color: var(--whiteColor);
+}
+
+/*::-webkit-scrollbar{
+    width: 10px;
+    background: var(--whiteColorDeam);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--SecondaryColor);
+    border-radius: 10px;
+}*/
+
+@media screen and (min-width: 1024px) {
+    .container{
+        width: 80% !important;
+        margin: auto !important;
+    }
+
+    .section{
+        padding: 6rem 0 4rem;
+     }
+}

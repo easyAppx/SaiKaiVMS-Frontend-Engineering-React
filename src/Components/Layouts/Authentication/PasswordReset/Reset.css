@@ -1,0 +1,319 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%),hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(180, 2%, 8%);
+  --greyColor: hsl(240, 2%, 52%);
+  --lightgreyColor: #D9D9D9;
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --fade:#5C5A5A;
+}
+
+body.modal-open {
+  background-color: rgba(0,0,0,0.4);
+  }
+
+.Reset.modal-open{
+  background-color: rgba(0,0,0,0.4);
+}
+p {
+  font-size: 10px;
+}
+
+  .Reset.modal-open{
+    background-color: rgba(0,0,0,0.4);
+  }
+  p {
+    font-size: 10px;
+  }
+
+
+.Reset {
+  /* padding-top: 13rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.Reset__form__container {
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 0px;
+  padding-right: 0px;
+  row-gap: 55px;
+  margin: -1rem;
+  max-width: 100%;
+  max-height: 100%;
+  background: #fff;
+}
+.Reset form {
+  padding: 93px 241px;
+  gap: 88px;
+  /* position: absolute; */
+  width: 1518px;
+  height: 766px;
+  left: 50px;
+  top: 38px;
+  background: #ffffff;
+  border: 2px solid #cccccc;
+  border-radius: 24px;
+  margin-top: 6rem;
+}
+.Reset__form__container input {
+  margin-top: 1rem;
+  width: 70rem;
+  padding: 20px;
+  height: 5rem;
+  border: 2px solid #999999;
+  border-radius: 8px;
+}
+.Reset__form__container legend {
+  font-size: 20px;
+  font-weight: bolder;
+  color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .Reset form {
+    padding: 2rem;
+    gap: 2rem;
+    width: auto;
+    height: 45rem;
+    left: 0;
+    top: 0;
+    margin-top: 3rem;
+  }
+  .Reset__form__container input {
+    width: 100%;
+  }
+  .btnOrang{
+    margin-left: -25rem;
+  }
+  
+}
+@media (max-width: 1440px) {
+  .Reset form {
+    padding: 2rem;
+    gap: 2rem;
+    width: auto;
+    height: 45rem;
+    left: 0;
+    top: 0;
+    margin-top: 3rem;
+  }
+  .Reset__form__container input {
+
+    max-width: 100%;
+
+    width: 100%;
+
+  }
+  .btnOrang{
+    margin-left: -25rem;
+  }
+}
+.wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* .modal {
+  display: none;
+  box-sizing: border-box;
+  position: absolute;
+  width: 1050px;
+  height: 500px;
+  left: 409px;
+  top: 280px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 24px;
+} */
+.modal .modal-content .Modal__check_mark img{
+  width: 15rem;
+  display: block;
+  margin: auto;
+  margin-top: -6rem;
+}
+
+.dark {
+  background-color: #000000;
+}
+
+.modal-content {
+  position: absolute;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px 250px;
+  border: #fff;
+  border-radius: 20px;
+
+}
+.Modal__Header{
+  font-size: 2.5rem;
+  font-weight: bolder;
+  display: block;
+  margin: auto;
+}
+.close{
+display: block;
+justify-content: flex-end;
+align-items: flex-end;
+text-align: right;
+font-size: 4rem;
+font-weight: bolder;
+/* position: absolute; */
+margin-right: 4rem;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btnOrang a .rangeBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  max-width: 300px;
+  height: 60px;
+  background: #EB6223;
+  border-radius: 4px;
+  margin: 5rem auto 0;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'lato';
+}
+@media (max-width: 768px) {  
+.btnOrang a .rangeBtn{
+left: -80rem;
+ display:none;
+
+}
+}
+.btnOrang a .rangeBtn:hover{
+  background: #BC4E1C;
+  color: white;
+}
+
+.btnOrang a .rangeBtn:active{
+  background: #EF814F;
+}
+
+.btnOrang a .angeBtn{
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 300px;
+  height: 60px;
+  background: #EB6223;
+  border-radius: 4px;
+  margin-top: 5rem;
+  margin-left: 24rem;
+
+  /*link*/
+
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'lato';
+}
+
+.btnOrang a .angeBtn:hover{
+  background: #BC4E1C;
+  color: white;
+}
+
+.btnOrang a .angeBtn:active{
+  background: #EF814F;
+}
+
+
+.modal {
+  display: none;
+  box-sizing: border-box;
+  position: fixed;
+  width: 80%;
+  height: 70%;
+  left: 10%;
+  top: 20%;
+  background: #ffffff;
+  /* border: 1px solid #000000; */
+  border-radius: 24px;
+  }
+  
+  @media screen and (max-width: 768px) {
+  .modal {
+  width: 80%;
+  height: 60%;
+  left: 10%;
+  top: 20%;
+  }
+  .modal-content {
+    text-align: center;
+    margin-top: 10rem;
+    }
+    
+  }
+  .modal-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 1% 10%;
+    border-radius: 20px;
+    /* font-size: 50vw; */
+    }
+    
+    .Modal__Header {
+    font-size: 3.5vw;
+    font-weight: bolder;
+    margin: 0;
+    }
+    .Modal__Header5{
+      font-size: 1vw;
+      font-weight: bolder;
+      margin: 0;
+    opacity: 30px;
+    }
+    .close {
+    font-size: 4vw;
+    font-weight: bolder;
+    margin-right: 4%;
+    }
+
+    #LG__ #LG{
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      width: 300px;
+      height: 60px;
+      background: #EB6223;
+      border-radius: 4px;
+      margin-top: 5rem;
+      margin-left: -10rem;
+    
+      /*link*/
+    
+      color: white;
+      font-size: 18px;
+      font-weight: 700;
+      font-family: 'lato';
+    }

@@ -1,0 +1,116 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%),hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(180, 2%, 8%);
+  --greyColor: hsl(240, 2%, 52%);
+  --lightgreyColor: #D9D9D9;
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'spectral';
+}
+
+p{
+  color: var(--fade);
+  font-size: 20px;
+  font-weight: 400;
+  text-align: justify;
+  font-family: 'lato';
+}
+
+a{
+  font-family: 'lato';
+}
+
+.headerTwo {
+  background: #001E3F;
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+  border-radius: 40px 40px 0px 0px;
+  display: flex;
+  margin-top: -4rem;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  min-width: 90.5%;
+  height: 100px;
+  z-index: 1000;
+}
+.headerTwo h2{
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+  text-align: center;
+  color: #FFFFFF;
+}
+.headerTwo img{
+  position: absolute;
+  right: 2.5rem;
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+  cursor: pointer;
+  align-items: center;
+}
+.headerTwo img:hover{
+  position: absolute;
+  right: 2.5rem;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  cursor: pointer;
+  align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header{
+    padding: 1rem 6rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .header{
+    padding: 0.6rem 4rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header{
+    padding: 0.6rem 4rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header{
+    padding: 0.6rem 4rem;
+  }
+}
+@media screen and (max-width: 470px) {
+  .header{
+    padding: 0.6rem 4rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .header{
+    padding: 0.6rem 2rem;
+    position: absolute;
+  }
+}
